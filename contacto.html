@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto y Asesoría Técnica | Beltrán Auditores</title>
+    <meta name="description" content="Establezca contacto con Beltrán Auditores para peritajes judiciales, auditorías forenses y consultoría tributaria. Atención profesional y confidencial en Santiago de Chile.">
+    
+    <!-- SEO & Social Media -->
+    <link rel="canonical" href="https://beltranauditores.cl/contacto.html" />
+    <meta property="og:title" content="Contacto Profesional | Beltrán Auditores" />
+    <meta property="og:description" content="Canal directo y confidencial para evaluación de requerimientos técnicos." />
+    <meta property="og:image" content="https://beltranauditores.cl/assets/director.png" />
+    <meta property="og:url" content="https://beltranauditores.cl/contacto.html" />
+    <meta property="og:type" content="website" />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' fill='%230B1F3B'/><text x='50%25' y='50%25' dominant-baseline='central' text-anchor='middle' font-size='60' fill='%23A7A9AC' font-family='serif' font-weight='bold'>B</text></svg>">
+
+    <!-- Importación de Tipografías -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&family=Playfair+Display:wght@500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        midnight: '#0B1F3B',
+                        silver: '#A7A9AC',
+                        oxford: '#353839',
+                        pure: '#FFFFFF',
+                    },
+                    fontFamily: {
+                        sans: ['Montserrat', 'sans-serif'],
+                        serif: ['Playfair Display', 'serif'],
+                    }
+                }
+            }
+        }
+    </script>
+
+    <link rel="stylesheet" href="assets/styles.css">
+</head>
+
+<body class="font-sans text-slate-800 bg-pure flex flex-col min-h-screen">
+
+    <!-- Navegación Dinámica -->
+    <header id="main-header" class="fixed w-full solid-nav z-50 transition-all duration-300">
+        <!-- Se carga desde assets/components/header.html -->
+    </header>
+
+    <main class="flex-grow">
+        <!-- Hero de Contacto -->
+        <section
+            class="bg-midnight-solid min-h-[50vh] flex items-center pt-40 pb-20 px-4 relative overflow-hidden technical-pattern reveal">
+            <div class="max-w-5xl mx-auto text-center relative z-10">
+                <h1 class="font-serif text-5xl md:text-7xl text-pure font-bold mb-8">
+                    Inicio de Consultoría <br class="hidden md:block"> y <span
+                        class="text-accent-silver italic">Diagnóstico Técnico</span>.
+                </h1>
+                <p class="text-lg md:text-xl text-slate-300 font-light max-w-3xl mx-auto leading-relaxed">
+                    Entendemos la sensibilidad y la urgencia de los desafíos que enfrenta su organización.
+                    Proporcionamos un canal directo y estrictamente confidencial para evaluar su requerimiento y
+                    determinar la estrategia de intervención más adecuada.
+                </p>
+            </div>
+        </section>
+
+        <!-- Formulario de Diagnóstico Inicial -->
+        <section class="py-24 md:py-32 px-4 bg-pure reveal">
+            <div class="max-w-4xl mx-auto">
+                <div class="bg-white p-8 md:p-16 border-hairline shadow-2xl relative">
+                    <div
+                        class="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-midnight text-pure px-8 py-2 text-[10px] uppercase tracking-[0.3em] font-bold">
+                        Protocolo de Ingreso
+                    </div>
+
+                    <form id="contactoForm" class="space-y-10">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+                            <!-- Nombre -->
+                            <div class="space-y-2">
+                                <label for="cont-nombre"
+                                    class="block text-[10px] font-bold text-slate-400 uppercase tracking-widest cursor-pointer">Nombre
+                                    Completo</label>
+                                <input type="text" id="cont-nombre" name="nombre" required
+                                    class="w-full px-0 py-3 bg-transparent border-b border-silver focus:border-midnight outline-none transition-all font-sans text-midnight placeholder-slate-300"
+                                    placeholder="Ej. Juan Pérez">
+                            </div>
+                            <!-- Cargo -->
+                            <div class="space-y-2">
+                                <label for="cont-cargo"
+                                    class="block text-[10px] font-bold text-slate-400 uppercase tracking-widest cursor-pointer">Cargo /
+                                    Función</label>
+                                <input type="text" id="cont-cargo" name="cargo" required
+                                    class="w-full px-0 py-3 bg-transparent border-b border-silver focus:border-midnight outline-none transition-all font-sans text-midnight placeholder-slate-300"
+                                    placeholder="Ej. Socio Litigante">
+                            </div>
+                        </div>
+
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+                            <!-- Organización -->
+                            <div class="space-y-2">
+                                <label for="cont-org"
+                                    class="block text-[10px] font-bold text-slate-400 uppercase tracking-widest cursor-pointer">Organización
+                                    / Estudio Jurídico</label>
+                                <input type="text" id="cont-org" name="organizacion" required
+                                    class="w-full px-0 py-3 bg-transparent border-b border-silver focus:border-midnight outline-none transition-all font-sans text-midnight placeholder-slate-300"
+                                    placeholder="Ej. Estudio Jurídico Asociados">
+                            </div>
+                            <!-- Email -->
+                            <div class="space-y-2">
+                                <label for="cont-email"
+                                    class="block text-[10px] font-bold text-slate-400 uppercase tracking-widest cursor-pointer">Correo
+                                    Electrónico Corporativo</label>
+                                <input type="email" id="cont-email" name="email" required
+                                    class="w-full px-0 py-3 bg-transparent border-b border-silver focus:border-midnight outline-none transition-all font-sans text-midnight placeholder-slate-300"
+                                    placeholder="ejemplo@organizacion.com">
+                            </div>
+                        </div>
+
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+                            <!-- Teléfono -->
+                            <div class="space-y-2">
+                                <label for="cont-tel"
+                                    class="block text-[10px] font-bold text-slate-400 uppercase tracking-widest cursor-pointer">Teléfono
+                                    de Contacto Directo</label>
+                                <input type="tel" id="cont-tel" name="telefono" required
+                                    class="w-full px-0 py-3 bg-transparent border-b border-silver focus:border-midnight outline-none transition-all font-sans text-midnight placeholder-slate-300"
+                                    placeholder="+56 9 ...">
+                            </div>
+                            <!-- Área de Requerimiento -->
+                            <div class="space-y-2">
+                                <label for="cont-area" class="block text-[10px] font-bold text-slate-400 uppercase tracking-widest cursor-pointer">Área
+                                    de Requerimiento</label>
+                                <select id="cont-area" name="area" required
+                                    class="w-full px-0 py-3 bg-transparent border-b border-silver focus:border-midnight outline-none transition-all font-sans text-midnight appearance-none cursor-pointer">
+                                    <option value="" disabled selected>Seleccione área...</option>
+                                    <option value="peritaje">Soporte Pericial Judicial (Civil/Comercial/Tributario)
+                                    </option>
+                                    <option value="forense">Auditoría Forense e Investigación de Irregularidades
+                                    </option>
+                                    <option value="erp">Rescate de Sistemas y Diagnóstico de Integridad ERP</option>
+                                    <option value="tributaria">Cumplimiento y Estrategia Tributaria (Ley 21.210)
+                                    </option>
+                                    <option value="otro">Otro requerimiento técnico especializado</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <!-- Preferencia de Contacto -->
+                        <div class="space-y-2">
+                            <label for="cont-pref"
+                                class="block text-[10px] font-bold text-slate-400 uppercase tracking-widest cursor-pointer">Preferencia
+                                de Contacto Inicial</label>
+                            <select id="cont-pref" name="preferencia" required
+                                class="w-full px-0 py-3 bg-transparent border-b border-silver focus:border-midnight outline-none transition-all font-sans text-midnight appearance-none cursor-pointer">
+                                <option value="" disabled selected>Seleccione preferencia...</option>
+                                <option value="videollamada">Videollamada (Google Meet / Zoom)</option>
+                                <option value="llamada">Llamada Telefónica</option>
+                                <option value="presencial">Reunión Presencial (Oficina / Visita Técnica)</option>
+                            </select>
+                        </div>
+
+                        <!-- Botón Submit -->
+                        <div class="pt-8">
+                            <button type="submit"
+                                class="w-full bg-midnight text-pure font-bold py-6 rounded-sm hover:bg-slate-800 transition-all shadow-2xl btn-premium text-lg">
+                                Iniciar Protocolo de Diagnóstico
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- Compromiso de Confidencialidad -->
+        <section class="py-24 md:py-32 px-4 bg-slate-50 reveal relative overflow-hidden">
+            <div class="max-w-4xl mx-auto">
+                <div class="inline-block px-4 py-1.5 border-l-2 border-midnight mb-8">
+                    <span class="text-xs uppercase tracking-widest text-midnight font-bold">Confidencialidad</span>
+                </div>
+                <h2 class="font-serif text-3xl md:text-5xl text-midnight font-bold mb-10 leading-tight">
+                    Protocolo de Respuesta Institucional.
+                </h2>
+                <div class="prose prose-slate prose-lg max-w-none text-slate-600 font-light leading-relaxed space-y-8">
+                    <p>
+                        En Beltrán Auditores, cada compromiso es asumido con la máxima responsabilidad técnica. Todas
+                        las reuniones de diagnóstico son lideradas personalmente por nuestro Director General, <strong
+                            class="text-midnight font-semibold">Juan Eduardo Beltrán</strong>, quien será acompañado por
+                        el especialista del equipo asignado según el área de requerimiento.
+                    </p>
+                    <p>
+                        Toda la información tratada en estas sesiones está bajo estrictos protocolos de reserva
+                        profesional. Un miembro de nuestra firma tomará contacto en un plazo máximo de <strong
+                            class="text-midnight font-semibold">24 horas hábiles</strong> para confirmar la
+                        disponibilidad de agenda.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Marca de Agua / Slogan Background -->
+            <div
+                class="absolute -bottom-10 right-0 opacity-5 font-serif text-[10vw] font-bold select-none pointer-events-none whitespace-nowrap">
+                Arquitectos de Certeza
+            </div>
+        </section>
+
+        <!-- Canales de Respaldo -->
+        <section class="py-24 bg-midnight text-pure reveal overflow-hidden relative">
+            <div class="max-w-7xl mx-auto px-4">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-20 items-center">
+                    <div>
+                        <h3 class="font-serif text-3xl font-bold mb-8">Canales de Respaldo</h3>
+                        <div class="space-y-6">
+                            <div class="flex items-center gap-6">
+                                <div class="w-12 h-12 bg-white/5 flex items-center justify-center rounded-full">
+                                    <svg class="w-6 h-6 text-silver" fill="none" stroke="currentColor"
+                                        viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                                            d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z">
+                                        </path>
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                                            d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <p class="text-xs uppercase tracking-widest text-silver mb-1">Oficina Central</p>
+                                    <p class="text-lg font-light">Santiago de Chile</p>
+                                </div>
+                            </div>
+                            <div class="flex items-center gap-6">
+                                <div class="w-12 h-12 bg-white/5 flex items-center justify-center rounded-full">
+                                    <svg class="w-6 h-6 text-silver" fill="none" stroke="currentColor"
+                                        viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                                            d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z">
+                                        </path>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <p class="text-xs uppercase tracking-widest text-silver mb-1">Comunicaciones</p>
+                                    <p class="text-lg font-light">hola@beltranauditores.cl</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="text-center md:text-right">
+                        <div class="inline-block border border-white/10 p-12 relative group">
+                            <div
+                                class="absolute inset-0 bg-white/5 scale-0 group-hover:scale-100 transition-transform duration-700 -z-10">
+                            </div>
+                            <div class="font-serif text-2xl md:text-4xl font-bold mb-4">Beltrán Auditores</div>
+                            <div class="text-silver uppercase tracking-[0.5em] text-xs">Arquitectos de Certeza</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Technical Pattern -->
+            <div class="absolute inset-0 opacity-5 pointer-events-none technical-pattern"></div>
+        </section>
+    </main>
+
+    <!-- Footer Dinámico -->
+    <footer id="main-footer" class="bg-midnight text-silver pt-24 pb-12 px-4 mt-auto">
+        <!-- Se carga desde assets/components/footer.html -->
+    </footer>
+
+    <!-- Modal de Éxito -->
+    <div id="successModal"
+        class="fixed inset-0 z-[100] bg-midnight/80 backdrop-blur-sm hidden flex items-center justify-center p-4 opacity-0 transition-opacity duration-300">
+        <div class="bg-white p-8 max-w-sm w-full rounded-sm shadow-2xl transform scale-95 transition-transform duration-300"
+            id="modalContent">
+            <div
+                class="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center mb-4 text-green-600 mx-auto">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                </svg>
+            </div>
+            <h3 class="font-serif text-xl text-midnight font-bold mb-2 text-center">Solicitud Recibida</h3>
+            <p class="text-slate-600 text-sm text-center mb-6">Hemos registrado sus datos exitosamente. Un miembro de
+                nuestra firma tomará contacto en un plazo máximo de 24 horas hábiles.</p>
+            <button id="closeModalBtn"
+                class="w-full bg-midnight text-white py-3 rounded-sm font-semibold hover:bg-slate-800 transition-colors">Cerrar</button>
+        </div>
+    </div>
+
+    <script src="assets/load-components.js"></script>
+    <script src="assets/main.js" defer></script>
+</body>
+
+</html>

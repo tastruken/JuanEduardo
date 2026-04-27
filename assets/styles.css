@@ -1,0 +1,105 @@
+/* ============================================
+   Beltrán Auditores - Hoja de Estilos Principal
+   Paleta de Colores:
+   - Azul Medianoche: #0B1F3B (Fondo y Base)
+   - Blanco Hueso:    #FFFFFF (Contraste Primario)
+   - Gris Oxford:     #353839 (Detalle Técnico)
+   - Plata Muted:     #A7A9AC (Separadores y Líneas)
+   ============================================ */
+
+/* Estilos base */
+body {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    scroll-behavior: smooth;
+}
+
+/* Institutional Border Tokens */
+.border-hairline {
+    border: 1px solid rgba(53, 56, 57, 0.15); /* Gris Oxford */
+}
+
+.border-hairline-light {
+    border: 1px solid rgba(167, 169, 172, 0.2); /* Plata Muted */
+}
+
+/* Sober Shadow: Very subtle, almost invisible lift */
+.shadow-sober {
+    box-shadow: 0 1px 3px 0 rgba(11, 31, 59, 0.08);
+}
+
+/* Solid Professional Backgrounds */
+.bg-midnight-solid {
+    background-color: #0B1F3B;
+}
+
+/* Technical Grid Pattern (Combined subtle light & grid) */
+.technical-pattern {
+    background-image:
+        radial-gradient(rgba(255, 255, 255, 0.04) 1px, transparent 1px),
+        linear-gradient(to right, rgba(167, 169, 172, 0.06) 1px, transparent 1px),
+        linear-gradient(to bottom, rgba(167, 169, 172, 0.06) 1px, transparent 1px),
+        radial-gradient(circle at 50% 50%, #112548 0%, #0B1F3B 100%);
+    background-size: 32px 32px, 128px 128px, 128px 128px, 100% 100%;
+    background-repeat: repeat, repeat, repeat, no-repeat;
+}
+
+/* Service Cards: Institutional Look */
+.service-card {
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    border: 1px solid rgba(167, 169, 172, 0.3); /* Plata Muted */
+    background: #FFFFFF;
+}
+
+.service-card:hover {
+    border-color: #0B1F3B; /* Azul Medianoche */
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px -5px rgba(11, 31, 59, 0.12), 0 8px 10px -6px rgba(11, 31, 59, 0.08);
+}
+
+/* Navigation: Glassmorphism Effect */
+.solid-nav {
+    background: rgba(11, 31, 59, 0.92); /* Azul Medianoche translúcido */
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-bottom: 1px solid rgba(167, 169, 172, 0.12); /* Plata Muted */
+}
+
+/* Typography spacing adjustments */
+h1, h2, h3 {
+    letter-spacing: -0.02em;
+    line-height: 1.15;
+}
+
+/* Accent color for italic spans in dark sections */
+.text-accent-silver {
+    color: #A7A9AC; /* Plata Muted */
+}
+
+/* Gris Oxford for secondary text */
+.text-oxford {
+    color: #353839;
+}
+
+/* Scroll Reveal Animation */
+.reveal {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.reveal.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Button Polish */
+.btn-premium {
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    position: relative;
+    overflow: hidden;
+}
+
+.btn-premium:active {
+    transform: scale(0.98);
+}

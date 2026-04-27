@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Error 404 - Página no encontrada | Beltrán Auditores</title>
+    <meta name="description" content="La página solicitada no está disponible. Regrese al inicio para continuar navegando.">
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' fill='%230B1F3B'/><text x='50%25' y='50%25' dominant-baseline='central' text-anchor='middle' font-size='60' fill='%23A7A9AC' font-family='serif' font-weight='bold'>B</text></svg>">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/styles.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        midnight: '#0B1F3B',
+                        silver: '#A7A9AC',
+                        pure: '#FFFFFF',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-midnight min-h-screen flex items-center justify-center p-4 technical-pattern font-sans">
+    <div class="max-w-md w-full text-center reveal active">
+        <h1 class="font-serif text-8xl md:text-9xl text-pure font-bold mb-4 opacity-20">404</h1>
+        <h2 class="font-serif text-2xl md:text-3xl text-pure font-bold mb-6">Enlace fuera de margen técnico.</h2>
+        <p class="text-slate-400 font-light mb-12 leading-relaxed">
+            La página que busca no existe o ha sido reubicada. <br> Regrese al inicio para retomar la navegación institucional.
+        </p>
+        <a href="index.html" class="inline-block bg-pure text-midnight px-10 py-4 rounded-sm font-bold shadow-2xl hover:bg-slate-100 transition-all text-sm uppercase tracking-widest btn-premium">
+            Volver al Inicio
+        </a>
+    </div>
+</body>
+</html>

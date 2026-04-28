@@ -11,20 +11,31 @@
             <a href="index.html"
                 class="nav-link text-silver hover:text-pure transition-colors text-sm font-medium tracking-wide">Inicio</a>
             <a href="nosotros.html"
-                class="nav-link text-silver hover:text-pure transition-colors text-sm font-medium tracking-wide">Nosotros</a>
-            <a href="index.html#especialidades"
-                class="nav-link text-silver hover:text-pure transition-colors text-sm font-medium tracking-wide">Especialidades</a>
-            <a href="servicios.html"
-                class="nav-link text-silver hover:text-pure transition-colors text-sm font-medium tracking-wide">Servicios</a>
+                class="nav-link text-silver hover:text-pure transition-colors text-sm font-medium tracking-wide">Quiénes Somos</a>
+            
+            <!-- Dropdown Servicios -->
+            <div class="relative group h-full flex items-center">
+                <a href="#" onclick="return false;"
+                    class="nav-link text-silver hover:text-pure transition-colors text-sm font-medium tracking-wide flex items-center gap-1">
+                    Servicios
+                    <svg class="w-4 h-4 opacity-50 group-hover:rotate-180 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                    </svg>
+                </a>
+                <div class="absolute top-full left-0 w-64 bg-midnight border border-white/10 shadow-2xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 py-2 z-50">
+                    <a href="soporte-pericial-judicial.html" class="block px-6 py-3 text-silver hover:text-pure hover:bg-white/5 text-xs uppercase tracking-widest font-medium">Soporte pericial</a>
+                    <a href="auditoria-forense-erp.html" class="block px-6 py-3 text-silver hover:text-pure hover:bg-white/5 text-xs uppercase tracking-widest font-medium">Auditoría forense</a>
+                    <a href="defensa-resolucion-sii.html" class="block px-6 py-3 text-silver hover:text-pure hover:bg-white/5 text-xs uppercase tracking-widest font-medium">Defensa SII/Regularización</a>
+                    <a href="gestion-nicsp-publico.html" class="block px-6 py-3 text-silver hover:text-pure hover:bg-white/5 text-xs uppercase tracking-widest font-medium">Gestión NICSP</a>
+                </div>
+            </div>
+
             <a href="trayectoria.html"
                 class="nav-link text-silver hover:text-pure transition-colors text-sm font-medium tracking-wide">Trayectoria</a>
             <a href="blog.html"
                 class="nav-link text-silver hover:text-pure transition-colors text-sm font-medium tracking-wide">Blog</a>
             <a href="contacto.html"
                 class="nav-link text-silver hover:text-pure transition-colors text-sm font-medium tracking-wide">Contacto</a>
-            <a href="contacto.html"
-                class="bg-silver text-midnight hover:bg-pure px-5 py-2 rounded-sm transition-colors text-sm font-semibold btn-premium">Diagnóstico
-                Inicial</a>
         </nav>
         <!-- Menú Móvil (Botón) -->
         <div class="md:hidden flex items-center">
@@ -38,22 +49,25 @@
     </div>
 </div>
 <!-- Menú Móvil (Desplegable) -->
-<div id="mobileMenu" class="hidden md:hidden bg-midnight border-t border-white/10 pb-3">
+<div id="mobileMenu" class="hidden md:hidden bg-midnight border-t border-white/10 pb-4 overflow-y-auto max-h-[80vh]">
     <a href="index.html"
         class="nav-link-mobile block px-4 py-3 text-silver hover:text-pure hover:bg-white/5 text-sm">Inicio</a>
     <a href="nosotros.html"
-        class="nav-link-mobile block px-4 py-3 text-silver hover:text-pure hover:bg-white/5 text-sm">Nosotros</a>
-    <a href="index.html#especialidades"
-        class="nav-link-mobile block px-4 py-3 text-silver hover:text-pure hover:bg-white/5 text-sm">Especialidades</a>
-    <a href="servicios.html"
-        class="nav-link-mobile block px-4 py-3 text-silver hover:text-pure hover:bg-white/5 text-sm">Servicios</a>
+        class="nav-link-mobile block px-4 py-3 text-silver hover:text-pure hover:bg-white/5 text-sm">Quiénes Somos</a>
+    
+    <!-- Submenú Móvil para Servicios -->
+    <div class="bg-white/5 py-2">
+        <span class="nav-link-mobile block px-4 py-2 text-silver font-semibold text-xs uppercase tracking-widest">Servicios</span>
+        <a href="soporte-pericial-judicial.html" class="block px-8 py-2 text-silver hover:text-pure text-xs">Soporte pericial</a>
+        <a href="auditoria-forense-erp.html" class="block px-8 py-2 text-silver hover:text-pure text-xs">Auditoría forense</a>
+        <a href="defensa-resolucion-sii.html" class="block px-8 py-2 text-silver hover:text-pure text-xs">Defensa SII/Regularización</a>
+        <a href="gestion-nicsp-publico.html" class="block px-8 py-2 text-silver hover:text-pure text-xs">Gestión NICSP</a>
+    </div>
+
     <a href="trayectoria.html"
         class="nav-link-mobile block px-4 py-3 text-silver hover:text-pure hover:bg-white/5 text-sm">Trayectoria</a>
     <a href="blog.html"
         class="nav-link-mobile block px-4 py-3 text-silver hover:text-pure hover:bg-white/5 text-sm">Blog</a>
     <a href="contacto.html"
         class="nav-link-mobile block px-4 py-3 text-silver hover:text-pure hover:bg-white/5 text-sm">Contacto</a>
-    <a href="contacto.html"
-        class="nav-link-mobile block px-4 py-3 text-silver font-semibold hover:text-pure hover:bg-white/5 text-sm">Diagnóstico
-        Inicial</a>
 </div>
